@@ -1,0 +1,176 @@
+/* Ejercicio 1:
+/* Aplicar color de fondo del cuerpo (body). */
+body {
+  background-color: rgb(243, 217, 255);
+}
+/* Aplicar color de texto del título <h1>. */
+/* Cambiar la fuente del título <h1> a Arial. */
+/* Aumentar el margen superior del título <h1> a 20px. */
+h1{
+  margin-top: 20px;
+  color: rgb(20, 122, 148);
+  font-family: Arial;  
+}
+/* Aplicar colores a los párrafos. */
+/* Cambiar el tamaño de la fuente del párrafo a 18px. */
+p{
+  color: rgb(168, 28, 86);
+  font-size: 18px;
+}
+
+/* Plus: Agregar otra fuente de https://fonts.google.com/ y usarla en algún párrafo. */
+/* Aplicar un borde sólido de 1px de color claro a un párrafo (<p>). */
+/* Agregar un padding de 10px alrededor del contenido del párrafo. */
+
+#parrafo_distinto{
+    font-family: "Edu NSW ACT Cursive", cursive;  
+    border: 1px ,solid;
+    border-color: rgb(255, 135, 135);
+    padding: 10px
+
+}
+
+
+/* Ejercicio 4: boton */
+/* Cambiar el color de fondo del botón a verde (#28a745) y el color del texto a blanco. */
+/* Agregar bordes redondeados (border-radius) de 5px. */
+/* Agregar padding 10px. */
+/* Aplicar ancho del botón a 100px. */
+/* Establecer margen superior e inferior de 10px. */
+/* Quitar el color del borde del botón. */
+button{
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* 
+Ejercicio 5: Inputs del formulario
+Agregar padding de 5px.
+Quitar bordes.
+Agregar márgenes superiores e inferiores de 5px entre cada control
+Plus: Aplicar un tipo de fuente para los labels de cada control.
+Plus: Aplicar width y height al textarea. Ejemplo: 300px ancho y 100px alto. */
+
+input{
+  padding: 5px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+label{
+  font-family: 'Times New Roman';
+}
+textarea{
+  width: 300px;
+  height: 100px;
+}
+
+/* 
+Ejercicio 6: Footer
+Aplicar color de fondo.
+Cambiar color del texto del footer.
+Agregar padding de 20px.
+Alinear texto al centro. */
+footer p{
+  background-color: rgb(228, 127, 253);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+/* 
+Ejercicio 7: Header
+Crear etiqueta header con un texto.
+Aplicar color de fondo y color de texto.
+Agregar padding de 50px.
+Alinear textos al centro. */
+header h1{
+  background-color: rgb(228, 127, 253);
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* 
+Ejercicio 8: Nav menu
+Aplicar color de fondo a la etiqueta nav y color de texto.
+Eliminar las bullets de la <ul> con: list-style: none;
+En cada item <li>, agregar padding 10px y aplicar display: inline-block; para mostrar los elementos en línea.
+Plus: Ocultar el submenu (ul dentro del li) con display: none; */
+nav {
+  background-color: rgb(228, 127, 253);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  position: relative; /*submenu */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Submenu oculto */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  background-color: rgb(200, 100, 250);
+  padding: 0;
+}
+
+/* Items del submenu en columna */
+nav ul li ul li {
+  display: block;
+  padding: 10px;
+  width: 150px;
+}
+
+/* Mostrar submenu al pasar el mouse */
+nav ul li:hover > ul {
+  display: block;
+}
+
+
+/* 
+Ejercicio 9: Diseño responsive - Media queries
+Agregar media queries para que el color de fondo del body tenga un color diferente en distintas pantallas. 
+Ejemplos: @media screen and (min-width: 768px) {}
+@media screen and (min-width: 1280px) {} */ 
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(225, 161, 255);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color:rgb(243, 217, 255);
+  }
+}
+
+
+
+/* adicional para las imagenes */
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto; 
+}
